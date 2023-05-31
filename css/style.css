@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(123deg, rgba(93, 45, 45, 1) 22%, rgba(34, 35, 71, 1) 70%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+i {
+    color: rgb(40, 203, 127);
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-left: 50px;
+    width: 25%;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.351);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+input:focus {
+    box-shadow: 1px 1px 10px white;
+}
+
+button {
+    margin-top: 15px;
+    background: rgb(18, 159, 63);
+    background: radial-gradient(circle, rgb(97, 197, 128) 24%, rgb(39, 123, 108) 100%);
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    transition: all .1s;
+}
+
+button:active {
+    scale: 1.1;
+    box-shadow: 1px 1px 10px rgb(240, 255, 246);
+    background: radial-gradient(circle, rgb(97, 197, 128) 24%, rgb(0, 255, 208) 100%);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.option {
+    margin: 10px 0;
+    color: white;
+}
+
+label {
+    font-size: large;
+}
+
+select {
+    width: 90%;
+    margin-top: 10px;
+    background-color: rgba(31, 17, 71, 0.616);
+    color: rgb(252, 252, 252);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(221, 215, 215, 0.436);
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 35%;
+        margin: 0;
+        margin-left: 10px;
+    }
+    input {
+        padding: 10px;
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .container {
+        justify-content: space-around;
+        width: 90%;
+    }
+}
