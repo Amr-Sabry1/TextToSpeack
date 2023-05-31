@@ -17,6 +17,7 @@ function loadVoices() {
     });
 }
 
+loadVoices();
 
 window.speechSynthesis.onvoiceschanged = function(e) {
     loadVoices();
